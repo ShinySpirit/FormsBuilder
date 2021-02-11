@@ -1,0 +1,94 @@
+.content
+{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+
+}
+
+.dragDropContent
+{
+    float: left;
+    margin: 0;
+    display: inline-flex;
+    width: 1000px;
+    height: 720px;
+}
+
+.col1
+{
+    
+
+    display: block;
+    float: left;
+    width: 500px;
+    height: 720px;
+    border: 1px solid green;
+    border-radius: 10px;
+    margin: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.col2
+{
+    display: block;
+    float: left;
+    width: 750px;
+    height: 720px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    margin: 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.col3
+{
+    display: block;
+    float: left;
+    width: 300px;
+    height: 720px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 3px;    
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.inputList
+{
+    margin: 0;
+    margin-top: 150px;
+    padding-right: 30px;
+    list-style: none;
+}
+
+ul > li
+{
+    padding-right: 30px;
+    cursor: move;
+    font-size: 20px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+ul > li:hover
+{
+    background-color: rgba(67, 211, 255, 0.11);
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2),
+                0 1px 1px 1px rgba(0, 0, 0, 0.14),
+                0 1px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+ul > li:active
+{
+    background-color: rgba(67, 211, 255, 0.349);
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}

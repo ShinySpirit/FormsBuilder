@@ -1,0 +1,26 @@
+<div class="content">    
+        <div class="col1"></div>
+        <div class="dragDropContent">
+        <div class="col2">
+            <div *ngFor="let input of inputs; let i = index" style="margin: 15px;" cdkDrag>
+                <span [innerHTML] = getSafeHTML(input.html)></span>
+            </div>
+            <form></form>
+        </div> 
+    <div class="col3">
+        <ul class="inputList">                
+            <li cdkDragBoundary =".dragDropContent" cdkDrag (cdkDragEnded) = "drop($event, 'input')">
+                <label for="input">Input</label><input type="text" style="border-radius: 10px; border: 1px solid grey;" id="input"></li>
+            <li cdkDragBoundary =".dragDropContent" cdkDrag (cdkDragEnded) = "drop($event, 'text')">
+                <label for="textArea">TextArea</label><textarea cols="20" rows="7" style="border-radius: 10px;" id="textArea"></textarea></li>
+            <li cdkDragBoundary =".dragDropContent" cdkDrag (cdkDragEnded) = "drop($event, 'button')">
+                <button style="border-radius: 10px;">Button</button></li>
+            <li cdkDragBoundary =".dragDropContent" cdkDrag (cdkDragEnded) = "drop($event, 'checkbox')">
+                 <input type="checkbox" id="check"> <label for="check">CheckBox</label></li>
+            <li cdkDragBoundary =".dragDropContent" cdkDrag (cdkDragEnded) = "drop($event, 'select')">
+                <mat-label>Select </mat-label>
+                <select></select><li>
+        </ul>
+    </div>
+        </div>
+</div>
